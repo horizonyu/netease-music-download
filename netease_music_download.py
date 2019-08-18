@@ -32,42 +32,7 @@ def download():
     print(len(music_links))
 
     # 获取音乐下载链接
-    # post_url = "http://music.wandhi.com/"
     post_url = "http://www.zhmdy.top/music/"
-    # post_headeer = {
-    #     'Host': 'zhmdy.top',
-    #     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
-    #     'Accept-Encoding': 'gzip, deflate',
-    #     'Connection': 'keep-alive',
-    #     'Origin': 'http://www.zhmdy.top',
-    #     'X-Requested-With': 'XMLHttpRequest',
-    #     'DNT': str(1),
-    # #     'Content-Length': str(83),
-    #     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-    # #     'Referer': 'http://music.wandhi.com/?url=https%3A%2F%2Fmusic.163.com%2Fsong%3Fid%3D1379032213',
-    #     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-    #     'Cookie': 'UM_distinctid=16c99678a2e34-0c61fe61a5015d-b781636-144000-16c99678a2f82; CNZZDATA1274607868=648588871-1565941677-null%7C156594710',
-    # #
-    # }
-    # #
-    # #
-    # payload = {'input': "https://music.163.com/song?id=1379032213", 'filter': 'url', 'type': '_', 'page': str(1)}
-    # data = parse.urlencode(payload).encode('utf-8')
-    # #
-    # #
-    # resp = requests.post(post_url, data=data, headers=post_headeer).content
-    # soup2 = BeautifulSoup(resp, "lxml")
-    # content = soup2.p.string
-    # content = json.loads(str(content))
-    #
-    # name = content['data'][0]['title']
-    # music_download_link = content['data'][0]['url']
-    # music_download_links.append(music_download_link)
-    # print(name+'.mp3', music_download_link)
-    # with open(name+'.mp3', 'wb') as fb:
-    #     fb.write(requests.get(music_download_link).content)
-
-    # exit(1)
 
     # 更改为自己的文件路径
     file_list = os.listdir("G:/study/projects/py_projects/网易云音乐下载")
