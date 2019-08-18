@@ -34,7 +34,7 @@ def download():
     # 获取音乐下载链接
     post_url = "http://www.zhmdy.top/music/"
 
-    # 更改为自己的文件路径
+    # 更改为自己的项目路径
     file_list = os.listdir("G:/study/projects/py_projects/网易云音乐下载")
     for song in music_links.values():
         # print(song)
